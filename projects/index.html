@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects | Feiyu Zhou</title>
+    <meta name="description" content="Projects: hierarchical list with tags and filters." />
+    <link rel="icon" href="../assets/favicon.svg" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <div class="brand">
+          <strong>Projects</strong>
+          <span>Browse by level and tags</span>
+        </div>
+        <nav class="nav" aria-label="primary">
+          <a href="../">Home</a>
+          <a href="./">Projects</a>
+          <a href="robotics/">Robotics</a>
+          <a href="../en/">EN</a>
+        </nav>
+      </header>
+
+      <section class="hero" style="padding-bottom:0;">
+        <div class="fade-in">
+          <h1 style="font-size:38px;">Projects, organized for scanning.</h1>
+          <p>
+            先看 <span class="tag level">Featured</span>，确认方向匹配；再用标签筛选查看全量。
+            每个项目建议包含：问题定义、你负责的模块边界、结果指标、可复现方式、代码与视频证据。
+          </p>
+        </div>
+        <aside class="card fade-in d2">
+          <h3>Quick Links</h3>
+          <div class="kv">
+            <div>Robotics</div>
+            <div><a href="robotics/">projects/robotics/</a></div>
+            <div>ML/AI</div>
+            <div><a href="ml/">projects/ml/</a></div>
+            <div>CV</div>
+            <div><a href="../assets/FeiyuZhou_CV.pdf">PDF</a></div>
+            <div>RS</div>
+            <div><a href="../assets/FeiyuZhou_RS.pdf">PDF</a></div>
+          </div>
+        </aside>
+      </section>
+
+      <div class="filters fade-in d2">
+        <input type="search" placeholder="Search projects, tags, keywords..." data-filter-search />
+        <button class="chip" type="button" aria-pressed="true" data-filter-chip data-token="featured">featured</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="major">major</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="other">other</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="ros2">ros2</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="slam">slam</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="rl">rl</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="transformer">transformer</button>
+      </div>
+
+      <div class="grid fade-in d3" data-project-list>
+        <article class="proj col-6" data-project data-level="featured" data-tags="robotics,ros2,slam,rl">
+          <h4>Quadruped Robotics: ROS2 + SLAM + Learning (WIP)</h4>
+          <p>Complex-environment deployment evidence: metrics + repo + demo video.</p>
+          <div class="meta">
+            <span class="tag level">Featured</span>
+            <span class="tag">robotics</span>
+            <span class="tag">ros2</span>
+            <span class="tag">slam</span>
+            <span class="tag">rl</span>
+            <a class="tag" href="robotics/">Details</a>
+          </div>
+        </article>
+
+        <article class="proj col-6" data-project data-level="major" data-tags="time-series,transformer,shm">
+          <h4>Wind SHM Digital Twin (Transformer Encoder-Decoder)</h4>
+          <p>Time-series modeling for wind-induced responses and digital twinning; first-author manuscript under review.</p>
+          <div class="meta">
+            <span class="tag level">Major</span>
+            <span class="tag">transformer</span>
+            <span class="tag">time-series</span>
+            <span class="tag">shm</span>
+          </div>
+        </article>
+
+        <article class="proj col-6" data-project data-level="major" data-tags="aero,simulation,wind">
+          <h4>Crosswind Analysis for Fully Enclosed Wind-Noise Barriers</h4>
+          <p>Coupled wind-structure analysis; design guidance for safety and stability; first-author manuscript under review.</p>
+          <div class="meta">
+            <span class="tag level">Major</span>
+            <span class="tag">simulation</span>
+            <span class="tag">wind</span>
+          </div>
+        </article>
+
+        <article class="proj col-6" data-project data-level="other" data-tags="ml,svm,mlp">
+          <h4>Concrete Chloride Diffusion Prediction (MLP/SVM)</h4>
+          <p>Published first-author paper (Sustainability 2023). Data normalization + virtual sample generation.</p>
+          <div class="meta">
+            <span class="tag level">Other</span>
+            <span class="tag">ml</span>
+            <span class="tag">svm</span>
+            <span class="tag">mlp</span>
+          </div>
+        </article>
+      </div>
+
+      <footer class="footer">
+        <div><a href="../">Back to Home</a></div>
+        <div><code>Tip: keep Featured to 2-4 items</code></div>
+      </footer>
+    </div>
+
+    <script src="../assets/site.js"></script>
+  </body>
+</html>
