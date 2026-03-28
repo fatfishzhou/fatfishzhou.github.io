@@ -33,64 +33,196 @@
         <div class="fade-in">
           <div class="eyebrow">Project Library</div>
           <p class="hero-lead hero-lead-wide hero-lead-strong">
-            这里的目标不是展示“我做过很多东西”，而是让阅读者快速判断我能胜任哪些技术岗位。
-            因此项目被组织为五类：具身智能与机器人、深度学习与模型训练、研究成果、系统基础设施、快速原型与硬件实践。
+            这个页面重点展示两类项目证据：一类是以 Transformer、时序建模、Ray 实验组织为代表的算法与训练工作；
+            另一类是以 ROS2、传感器接入、点云链路和系统联调为代表的机器人实践。整体按方向组织，而不是按时间平铺。
           </p>
+          <div class="pillrow">
+            <span class="pill"><b>Main Line</b> Algorithm and Model Training</span>
+            <span class="pill"><b>Secondary</b> Robotics and System Practice</span>
+            <span class="pill"><b>Browse</b> Featured Work + Full Library</span>
+          </div>
         </div>
 
-        <aside class="card fade-in d2">
-          <h3>Quick Links</h3>
-          <div class="kv">
-            <div>Robotics</div>
-            <div><a href="robotics/">具身智能与机器人系统</a></div>
-            <div>ML</div>
-            <div><a href="ml/">深度学习与时序建模</a></div>
-            <div>Research</div>
-            <div><a href="../research/">论文与研究方向</a></div>
-            <div>Resume</div>
-            <div><a href="../assets/FeiyuZhou_CV.pdf">PDF</a></div>
+        <aside class="project-overview-card fade-in d2">
+          <div class="project-overview-head">
+            <h3>At A Glance</h3>
+            <span class="status-dot">Algorithm-first portfolio</span>
+          </div>
+          <div class="project-fact-grid">
+            <div>
+              <strong>02</strong>
+              <span>Main directions</span>
+            </div>
+            <div>
+              <strong>06</strong>
+              <span>Selected projects</span>
+            </div>
+            <div>
+              <strong>05</strong>
+              <span>Theme groups</span>
+            </div>
+          </div>
+          <div class="project-overview-links">
+            <a href="ml/">深度学习与时序建模</a>
+            <a href="robotics/">机器人系统与感知实践</a>
+            <a href="../research/">论文与研究方向</a>
+            <a href="../assets/FeiyuZhou_CV.pdf">简历 PDF</a>
           </div>
         </aside>
       </section>
 
       <section class="section-block fade-in d2">
-        <div class="section-title">Categories</div>
-        <div class="category-grid">
-          <article class="card category-card">
-            <h3>Embodied AI and Robotics</h3>
-            <p>四足机器人、ROS2、SLAM、环境建模、传感器集成与任务执行闭环。</p>
+        <div class="section-title">Project Structure</div>
+        <div class="project-track-grid">
+          <article class="project-track-card project-track-primary">
+            <div class="track-kicker">Main Direction</div>
+            <h3>Algorithm and Model Training</h3>
+            <p>
+              当前主线围绕 Transformer、时序建模、异常检测、实验设计、结果分析与 Ray
+              并行实验组织展开，更接近算法工程与模型研发场景。
+            </p>
+            <div class="meta">
+              <span class="tag">Transformer</span>
+              <span class="tag">Time-series</span>
+              <span class="tag">Ray</span>
+              <span class="tag">Experiment Design</span>
+            </div>
           </article>
-          <article class="card category-card">
-            <h3>Deep Learning and Model Training</h3>
-            <p>Transformer、时序建模、实验设计、模型训练流程与结果评估。</p>
+          <article class="project-track-card">
+            <div class="track-kicker">Secondary Direction</div>
+            <h3>Robotics and System Practice</h3>
+            <p>
+              机器人相关项目更强调真实系统中的接入、联调、验证与快速迭代，覆盖 ROS2、点云链路、
+              传感器接入、SLAM 与环境建模。
+            </p>
+            <div class="meta">
+              <span class="tag">ROS2</span>
+              <span class="tag">Point Cloud</span>
+              <span class="tag">SLAM</span>
+              <span class="tag">System Integration</span>
+            </div>
           </article>
-          <article class="card category-card">
+        </div>
+        <div class="project-support-grid">
+          <article class="project-support-card">
             <h3>Research and Publications</h3>
-            <p>已发表与在审工作，用于展示科研产出、建模能力与研究连续性。</p>
+            <p>用于展示科研产出、建模能力与持续研究轨迹。</p>
           </article>
-          <article class="card category-card">
+          <article class="project-support-card">
             <h3>Systems and Infrastructure</h3>
-            <p>Linux、Docker、部署、日志、实验复现和工程化工具链组织。</p>
+            <p>包括 Linux、Docker、实验复现、脚本化执行与工程化组织。</p>
           </article>
-          <article class="card category-card">
-            <h3>Rapid Prototyping and Hardware</h3>
-            <p>快速试验、系统联调、文档沉淀和硬件相关探索。</p>
+          <article class="project-support-card">
+            <h3>Rapid Prototyping</h3>
+            <p>保留硬件实践、快速试验与系统联调相关内容，作为工程落地的补充证据。</p>
           </article>
         </div>
       </section>
 
-      <div class="filters fade-in d2">
-        <input type="search" placeholder="搜索项目、方向、标签..." data-filter-search />
-        <button class="chip" type="button" aria-pressed="true" data-filter-chip data-token="featured">featured</button>
-        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="embodied-ai">embodied-ai</button>
-        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="deep-learning">deep-learning</button>
-        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="research">research</button>
-        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="systems">systems</button>
-        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="robotics">robotics</button>
-        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="transformer">transformer</button>
-      </div>
+      <section class="section-block fade-in d3">
+        <div class="section-title">Selected Projects</div>
+        <div class="selected-projects-grid">
+          <article class="project-spotlight-card project-spotlight-card-primary">
+            <div class="publication-meta">
+              <span class="tag level">Selected</span>
+              <span class="tag">algorithm</span>
+              <span class="tag">transformer</span>
+              <span class="tag">time-series</span>
+            </div>
+            <h3>Wind SHM Digital Twin with Transformer Encoder-Decoder</h3>
+            <p>
+              这是目前最能代表算法主线的项目之一，围绕结构健康监测、序列建模、数字孪生表达和研究输出展开，
+              也对应了你当前最值得持续放大的技术叙事。
+            </p>
+            <ul class="evidence-list">
+              <li>关注多变量时序建模、自注意力结构与实验结果分析</li>
+              <li>连接模型研发、实验验证与论文表达</li>
+              <li>对应 <em>Computers &amp; Structures</em> 稿件的持续推进</li>
+            </ul>
+            <div class="meta">
+              <a class="tag" href="ml/">Project Details</a>
+              <a class="tag" href="../research/">Related Research</a>
+            </div>
+          </article>
 
-      <div class="grid fade-in d3" data-project-list>
+          <article class="project-spotlight-card">
+            <div class="publication-meta">
+              <span class="tag level">Selected</span>
+              <span class="tag">training</span>
+              <span class="tag">ray</span>
+              <span class="tag">systems</span>
+            </div>
+            <h3>Training Workflow and Ray-Based Experiment Organization</h3>
+            <p>
+              这部分工作强调模型训练闭环，而不只是单次实验本身，重点包括训练脚本组织、配置管理、
+              并行试验、结果对比和可复现性整理。
+            </p>
+            <ul class="evidence-list">
+              <li>围绕 PyTorch 与 Ray 组织实验流程</li>
+              <li>更贴近算法工程和训练平台相关场景</li>
+              <li>服务于模型优化、参数搜索与实验编排</li>
+            </ul>
+            <div class="meta">
+              <a class="tag" href="ml/">Project Context</a>
+              <a class="tag" href="../about/">Capability Context</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-grid project-grid-compact">
+          <article class="card project-card">
+            <h4>Concrete Chloride Diffusion Prediction</h4>
+            <p class="card-copy">第一作者发表工作，体现从数据处理、建模比较到结果表达的完整实验实现能力。</p>
+            <div class="meta">
+              <span class="tag">ml</span>
+              <span class="tag">research</span>
+              <a class="tag" href="../research/">Details</a>
+            </div>
+          </article>
+          <article class="card project-card">
+            <h4>Information-Theoretic Dynamic System Identification</h4>
+            <p class="card-copy">聚焦结构动力学、阻尼估计与算法分析，体现数学建模与工程问题之间的连接能力。</p>
+            <div class="meta">
+              <span class="tag">system-id</span>
+              <span class="tag">research</span>
+              <a class="tag" href="../research/">Details</a>
+            </div>
+          </article>
+          <article class="card project-card">
+            <h4>Quadruped Robot Integration and Execution Loop</h4>
+            <p class="card-copy">围绕 ROS2、任务执行、日志回放和系统联调形成真实平台上的工程证据。</p>
+            <div class="meta">
+              <span class="tag">robotics</span>
+              <span class="tag">ros2</span>
+              <a class="tag" href="robotics/">Details</a>
+            </div>
+          </article>
+          <article class="card project-card">
+            <h4>SLAM Evaluation under Degraded Conditions</h4>
+            <p class="card-copy">关注统一实验口径、定位鲁棒性对比与真实系统中的工程代价评估。</p>
+            <div class="meta">
+              <span class="tag">slam</span>
+              <span class="tag">robotics</span>
+              <a class="tag" href="robotics/">Details</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block fade-in d3">
+        <div class="section-title">Browse the Full Library</div>
+        <div class="filters fade-in d2">
+          <input type="search" placeholder="搜索项目、方向、标签..." data-filter-search />
+          <button class="chip" type="button" aria-pressed="true" data-filter-chip data-token="featured">精选</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="deep-learning">深度学习</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="transformer">Transformer</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="research">研究</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="systems">系统</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="robotics">机器人</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="slam">SLAM</button>
+        </div>
+
+        <div class="grid fade-in d3" data-project-list>
         <article class="proj col-6" data-project data-level="featured" data-tags="embodied-ai,robotics,ros2,slam,systems">
           <h4>四足机器人系统集成与任务执行闭环</h4>
           <p>当前主线项目，围绕 ROS2、定位建图、任务执行与工程化回放建立真实系统证据。</p>
@@ -185,7 +317,8 @@
             <a class="tag" href="../about/">Context</a>
           </div>
         </article>
-      </div>
+        </div>
+      </section>
 
       <footer class="footer">
         <div><a href="../">Back to Home</a></div>
