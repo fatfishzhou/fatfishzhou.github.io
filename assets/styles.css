@@ -166,6 +166,10 @@ a:hover {
   max-width: 58ch;
 }
 
+.hero-lead-strong {
+  color: var(--text);
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
