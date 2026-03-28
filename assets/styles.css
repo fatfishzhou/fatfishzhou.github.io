@@ -373,7 +373,9 @@ a:hover {
 }
 
 .positioning-wide-copy-full {
-  max-width: none;
+  display: block;
+  width: 100%;
+  max-width: 100%;
 }
 
 .positioning-wide-bottom {
