@@ -1,6 +1,16 @@
 # fatfishzhou.github.io
 
-个人主页（静态站点，无需后端），用于博士/科研/机器人方向展示：简介、精选项目、分级项目清单、论文、CV/Research Statement 下载。
+个人主页（静态站点，无需后端），用于展示项目经历、研究方向、论文成果与联系方式。
+
+当前站点结构：
+- `index.html`：中文首页，突出两条主线、精选项目、研究成果与联系方式
+- `projects/`：按主题浏览项目库
+- `projects/robotics/`：机器人与具身智能项目证据页
+- `projects/ml/`：深度学习与时序建模项目页
+- `research/`：论文状态、研究主题与能力迁移
+- `about/`：个人定位、能力结构与适配角色
+- `contact/`：联系方式、材料入口与建议联系内容
+- `en/`：英文入口页
 
 ## 发布到 GitHub Pages（User Pages）
 1. 在 GitHub 新建仓库：`fatfishzhou.github.io`（必须是这个名字）。
@@ -15,8 +25,8 @@ python3 -m http.server 8000
 ```
 然后打开 `http://localhost:8000/`。
 
-## 你需要改的地方（优先级）
-- `index.html` / `en/index.html`：一句话定位、研究兴趣、联系方式。
-- `projects/robotics/index.html`：把机器狗项目的 TODO 换成真实内容（模块边界 + 指标 + 代码/视频链接）。
-- `assets/`：替换为你最终版 `CV.pdf`、`RS.pdf`（并在首页更新文件名）。
-
+## 后续优先更新项
+- `projects/robotics/index.html`：补齐真实模块边界、指标、代码和视频证据。
+- `projects/ml/index.html`：补更完整的方法摘要、结果与论文链接。
+- `research/index.html`：补正式论文题目、期刊/会议信息与时间点。
+- `assets/`：替换为最终版 `CV.pdf`、`RS.pdf`，必要时补项目配图或架构图。

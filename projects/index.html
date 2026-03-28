@@ -4,7 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Projects | Feiyu Zhou</title>
-    <meta name="description" content="Projects: hierarchical list with tags and filters." />
+    <meta
+      name="description"
+      content="周飞宇的项目主页：按具身智能、深度学习、研究成果、系统基础设施与快速原型分类浏览。"
+    />
+    <meta name="theme-color" content="#f6f8fb" />
     <link rel="icon" href="../assets/favicon.svg" />
     <link rel="stylesheet" href="../assets/styles.css" />
   </head>
@@ -13,100 +17,180 @@
       <header class="topbar">
         <div class="brand">
           <strong>Projects</strong>
-          <span>Browse by level and tags</span>
+          <span>Project-first portfolio organized by technical themes</span>
         </div>
         <nav class="nav" aria-label="primary">
-          <a href="../">Home</a>
+          <a href="../">主页</a>
           <a href="./">Projects</a>
-          <a href="robotics/">Robotics</a>
+          <a href="../research/">Research</a>
+          <a href="../about/">About</a>
+          <a href="../contact/">Contact</a>
           <a href="../en/">EN</a>
         </nav>
       </header>
 
-      <section class="hero" style="padding-bottom:0;">
+      <section class="hero hero-simple">
         <div class="fade-in">
-          <h1 style="font-size:38px;">Projects, organized for scanning.</h1>
-          <p>
-            先看 <span class="tag level">Featured</span>，确认方向匹配；再用标签筛选查看全量。
-            每个项目建议包含：问题定义、你负责的模块边界、结果指标、可复现方式、代码与视频证据。
+          <div class="eyebrow">Project Library</div>
+          <h1>按主题组织，而不是按时间堆叠。</h1>
+          <p class="hero-lead hero-lead-wide">
+            这里的目标不是展示“我做过很多东西”，而是让阅读者快速判断我能胜任哪些技术岗位。
+            因此项目被组织为五类：具身智能与机器人、深度学习与模型训练、研究成果、系统基础设施、快速原型与硬件实践。
           </p>
         </div>
+
         <aside class="card fade-in d2">
           <h3>Quick Links</h3>
           <div class="kv">
             <div>Robotics</div>
-            <div><a href="robotics/">projects/robotics/</a></div>
-            <div>ML/AI</div>
-            <div><a href="ml/">projects/ml/</a></div>
-            <div>CV</div>
+            <div><a href="robotics/">具身智能与机器人系统</a></div>
+            <div>ML</div>
+            <div><a href="ml/">深度学习与时序建模</a></div>
+            <div>Research</div>
+            <div><a href="../research/">论文与研究方向</a></div>
+            <div>Resume</div>
             <div><a href="../assets/FeiyuZhou_CV.pdf">PDF</a></div>
-            <div>RS</div>
-            <div><a href="../assets/FeiyuZhou_RS.pdf">PDF</a></div>
           </div>
         </aside>
       </section>
 
+      <section class="section-block fade-in d2">
+        <div class="section-title">Categories</div>
+        <div class="category-grid">
+          <article class="card category-card">
+            <h3>Embodied AI and Robotics</h3>
+            <p>四足机器人、ROS2、SLAM、环境建模、传感器集成与任务执行闭环。</p>
+          </article>
+          <article class="card category-card">
+            <h3>Deep Learning and Model Training</h3>
+            <p>Transformer、时序建模、实验设计、模型训练流程与结果评估。</p>
+          </article>
+          <article class="card category-card">
+            <h3>Research and Publications</h3>
+            <p>已发表与在审工作，用于展示科研产出、建模能力与研究连续性。</p>
+          </article>
+          <article class="card category-card">
+            <h3>Systems and Infrastructure</h3>
+            <p>Linux、Docker、部署、日志、实验复现和工程化工具链组织。</p>
+          </article>
+          <article class="card category-card">
+            <h3>Rapid Prototyping and Hardware</h3>
+            <p>快速试验、系统联调、文档沉淀和硬件相关探索。</p>
+          </article>
+        </div>
+      </section>
+
       <div class="filters fade-in d2">
-        <input type="search" placeholder="Search projects, tags, keywords..." data-filter-search />
+        <input type="search" placeholder="搜索项目、方向、标签..." data-filter-search />
         <button class="chip" type="button" aria-pressed="true" data-filter-chip data-token="featured">featured</button>
-        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="major">major</button>
-        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="other">other</button>
-        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="ros2">ros2</button>
-        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="slam">slam</button>
-        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="rl">rl</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="embodied-ai">embodied-ai</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="deep-learning">deep-learning</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="research">research</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="systems">systems</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="robotics">robotics</button>
         <button class="chip" type="button" aria-pressed="false" data-filter-chip data-token="transformer">transformer</button>
       </div>
 
       <div class="grid fade-in d3" data-project-list>
-        <article class="proj col-6" data-project data-level="featured" data-tags="robotics,ros2,slam,rl">
-          <h4>Quadruped Robotics: ROS2 + SLAM + Learning (WIP)</h4>
-          <p>Complex-environment deployment evidence: metrics + repo + demo video.</p>
+        <article class="proj col-6" data-project data-level="featured" data-tags="embodied-ai,robotics,ros2,slam,systems">
+          <h4>四足机器人系统集成与任务执行闭环</h4>
+          <p>当前主线项目，围绕 ROS2、定位建图、任务执行与工程化回放建立真实系统证据。</p>
           <div class="meta">
             <span class="tag level">Featured</span>
+            <span class="tag">embodied-ai</span>
             <span class="tag">robotics</span>
             <span class="tag">ros2</span>
-            <span class="tag">slam</span>
-            <span class="tag">rl</span>
             <a class="tag" href="robotics/">Details</a>
           </div>
         </article>
 
-        <article class="proj col-6" data-project data-level="major" data-tags="time-series,transformer,shm">
+        <article class="proj col-6" data-project data-level="featured" data-tags="deep-learning,research,transformer,time-series">
           <h4>Wind SHM Digital Twin (Transformer Encoder-Decoder)</h4>
-          <p>Time-series modeling for wind-induced responses and digital twinning; first-author manuscript under review.</p>
+          <p>将时序建模、数字孪生和科研表达结合在一起的代表性研究项目。</p>
           <div class="meta">
-            <span class="tag level">Major</span>
+            <span class="tag level">Featured</span>
+            <span class="tag">deep-learning</span>
             <span class="tag">transformer</span>
-            <span class="tag">time-series</span>
-            <span class="tag">shm</span>
+            <span class="tag">research</span>
+            <a class="tag" href="ml/">Details</a>
           </div>
         </article>
 
-        <article class="proj col-6" data-project data-level="major" data-tags="aero,simulation,wind">
-          <h4>Crosswind Analysis for Fully Enclosed Wind-Noise Barriers</h4>
-          <p>Coupled wind-structure analysis; design guidance for safety and stability; first-author manuscript under review.</p>
+        <article class="proj col-6" data-project data-level="major" data-tags="embodied-ai,robotics,systems,ros2,deployment">
+          <h4>ROS2 工程化：workspace、launch、日志与回放</h4>
+          <p>把“能跑起来”的系统进一步整理成可复现、可调试、可评估的工程流程。</p>
           <div class="meta">
             <span class="tag level">Major</span>
-            <span class="tag">simulation</span>
-            <span class="tag">wind</span>
+            <span class="tag">systems</span>
+            <span class="tag">ros2</span>
+            <span class="tag">deployment</span>
+            <a class="tag" href="robotics/">Details</a>
           </div>
         </article>
 
-        <article class="proj col-6" data-project data-level="other" data-tags="ml,svm,mlp">
+        <article class="proj col-6" data-project data-level="major" data-tags="embodied-ai,robotics,slam,research">
+          <h4>SLAM 对比：退化工况下的定位鲁棒性评估</h4>
+          <p>强调统一评价指标、实验口径和不同方案在真实系统中的工程代价。</p>
+          <div class="meta">
+            <span class="tag level">Major</span>
+            <span class="tag">slam</span>
+            <span class="tag">robotics</span>
+            <span class="tag">research</span>
+            <a class="tag" href="robotics/">Details</a>
+          </div>
+        </article>
+
+        <article class="proj col-6" data-project data-level="major" data-tags="research,simulation,systems">
+          <h4>Crosswind Analysis for Fully Enclosed Wind-Noise Barriers</h4>
+          <p>体现多物理场建模、结构分析和研究产出能力的工程研究项目。</p>
+          <div class="meta">
+            <span class="tag level">Major</span>
+            <span class="tag">research</span>
+            <span class="tag">simulation</span>
+            <a class="tag" href="../research/">Details</a>
+          </div>
+        </article>
+
+        <article class="proj col-6" data-project data-level="major" data-tags="deep-learning,ml,research">
           <h4>Concrete Chloride Diffusion Prediction (MLP/SVM)</h4>
-          <p>Published first-author paper (Sustainability 2023). Data normalization + virtual sample generation.</p>
+          <p>通过数据处理、建模和结果比较完成第一作者论文发表，体现完整的实验实现能力。</p>
+          <div class="meta">
+            <span class="tag level">Major</span>
+            <span class="tag">deep-learning</span>
+            <span class="tag">ml</span>
+            <span class="tag">research</span>
+            <a class="tag" href="ml/">Details</a>
+          </div>
+        </article>
+
+        <article class="proj col-6" data-project data-level="other" data-tags="systems,linux,docker,infrastructure">
+          <h4>训练与实验流程组织</h4>
+          <p>围绕实验复现、依赖管理、环境配置和脚本化执行整理个人的系统基础设施能力。</p>
           <div class="meta">
             <span class="tag level">Other</span>
-            <span class="tag">ml</span>
-            <span class="tag">svm</span>
-            <span class="tag">mlp</span>
+            <span class="tag">systems</span>
+            <span class="tag">linux</span>
+            <span class="tag">infrastructure</span>
+            <a class="tag" href="../about/">Context</a>
+          </div>
+        </article>
+
+        <article class="proj col-6" data-project data-level="other" data-tags="hardware,systems,robotics">
+          <h4>快速原型与系统联调实践</h4>
+          <p>包括真实系统部署过程中的调参、联调、问题定位和文档沉淀，服务于后续更完整的项目证据。</p>
+          <div class="meta">
+            <span class="tag level">Other</span>
+            <span class="tag">hardware</span>
+            <span class="tag">systems</span>
+            <span class="tag">robotics</span>
+            <a class="tag" href="../about/">Context</a>
           </div>
         </article>
       </div>
 
       <footer class="footer">
         <div><a href="../">Back to Home</a></div>
-        <div><code>Tip: keep Featured to 2-4 items</code></div>
+        <div><code>Project-first organization · Theme-based browsing</code></div>
       </footer>
     </div>
 

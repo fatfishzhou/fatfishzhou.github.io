@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Robotics | Feiyu Zhou</title>
     <meta name="description" content="Robotics portfolio: quadruped, ROS2, SLAM, RL, reproducible demos." />
+    <meta name="theme-color" content="#f6f8fb" />
     <link rel="icon" href="../../assets/favicon.svg" />
     <link rel="stylesheet" href="../../assets/styles.css" />
   </head>
@@ -18,6 +19,9 @@
         <nav class="nav" aria-label="primary">
           <a href="../../">主页</a>
           <a href="../">Projects</a>
+          <a href="../../research/">Research</a>
+          <a href="../../about/">About</a>
+          <a href="../../contact/">Contact</a>
           <a href="./">Robotics</a>
           <a href="../../en/">EN</a>
         </nav>
@@ -39,9 +43,9 @@
             <div>Repo</div>
             <div><a href="https://github.com/fatfishzhou" target="_blank" rel="noreferrer">github.com/fatfishzhou</a></div>
             <div>Video</div>
-            <div><span class="tag bad">TODO</span> 放 B 站/YouTube/网盘短链接</div>
+            <div>计划补充演示视频与关键流程说明，用于展示真实任务闭环。</div>
             <div>Docs</div>
-            <div><span class="tag bad">TODO</span> 1 页项目说明 PDF</div>
+            <div>后续会补 1 页项目说明，用于总结目标、方法、结果与复现方式。</div>
           </div>
         </aside>
       </section>
@@ -60,10 +64,10 @@
           <h4>四足机器人：ROS2 传感器接入 + 定位建图 + 任务执行闭环（进行中）</h4>
           <p>
             <b>目标：</b>复杂环境稳定完成导航/巡检任务。<br />
-            <b>你负责：</b><span class="tag bad">TODO</span>（写清节点/模块边界：驱动层、融合、SLAM、nav2、控制、数据管线等）。<br />
-            <b>指标：</b><span class="tag bad">TODO</span>（ATE/RPE、漂移、成功率、跌倒率、能耗、CPU/GPU 等）。<br />
-            <b>复现：</b><span class="tag bad">TODO</span>（Docker/脚本/rosbag）。<br />
-            <b>证据：</b><span class="tag bad">TODO</span>（repo 链接 + 60-120s 视频）。
+            <b>你负责：</b>当前重点在系统集成、模块边界梳理、实验流程组织与后续证据沉淀。<br />
+            <b>指标：</b>后续将统一到定位误差、任务成功率、稳定性与系统实时性等核心指标。<br />
+            <b>复现：</b>目标是形成可运行 workspace、脚本化启动流程和最小复现实验路径。<br />
+            <b>证据：</b>后续将补充 repo 链接、流程视频与项目说明文档。
           </p>
           <div class="meta">
             <span class="tag level">Featured</span>
@@ -79,7 +83,7 @@
           <p>
             <b>目标：</b>把“能跑”变成“可复现、可调试、可交付”。<br />
             <b>内容：</b>包结构约定、launch/params 组织、rosbag 记录回放、脚本化评估。<br />
-            <b>证据：</b><span class="tag bad">TODO</span>（仓库/README/脚本截图）。
+            <b>证据：</b>后续会通过仓库说明、启动脚本和实验记录进行补充。
           </p>
           <div class="meta">
             <span class="tag level">Major</span>
@@ -93,9 +97,9 @@
           <h4>SLAM 对比：退化工况下的鲁棒性实验</h4>
           <p>
             <b>目标：</b>在动态/弱纹理/遮挡等场景，定位漂移可控。<br />
-            <b>方法：</b><span class="tag bad">TODO</span>（FAST-LIO / LIO-SAM / ORB-SLAM3 ...）。<br />
-            <b>指标：</b><span class="tag bad">TODO</span>（ATE/RPE、CPU、丢帧、回环）。<br />
-            <b>证据：</b><span class="tag bad">TODO</span>（图表 + rosbag + 评估脚本）。
+            <b>方法：</b>将围绕主流激光或视觉惯导方案进行统一对比。<br />
+            <b>指标：</b>重点关注 ATE/RPE、实时性、鲁棒性和系统资源消耗。<br />
+            <b>证据：</b>后续计划补图表、数据包与评估脚本说明。
           </p>
           <div class="meta">
             <span class="tag level">Major</span>
@@ -109,10 +113,10 @@
           <h4>强化学习：仿真训练与迁移（PPO/SAC）</h4>
           <p>
             <b>目标：</b>让策略在扰动与不同地形下保持稳定，并具备 sim-to-real 路线。<br />
-            <b>仿真：</b><span class="tag bad">TODO</span>（MuJoCo / Isaac Gym / Gazebo）。<br />
-            <b>结果：</b><span class="tag bad">TODO</span>（成功率/跌倒率/能耗/泛化对比）。<br />
-            <b>安全：</b><span class="tag bad">TODO</span>（动作限幅/安全过滤/分级上线）。<br />
-            <b>证据：</b><span class="tag bad">TODO</span>（训练曲线 + 视频 + 代码）。
+            <b>仿真：</b>将围绕主流仿真平台建立训练与对比实验流程。<br />
+            <b>结果：</b>后续重点展示成功率、跌倒率、能耗与泛化表现。<br />
+            <b>安全：</b>计划通过动作约束和分级上线控制真实系统风险。<br />
+            <b>证据：</b>后续将补充训练曲线、视频与代码入口。
           </p>
           <div class="meta">
             <span class="tag level">Other</span>
@@ -133,4 +137,3 @@
     <script src="../../assets/site.js"></script>
   </body>
 </html>
-
