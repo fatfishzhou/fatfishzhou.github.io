@@ -39,7 +39,7 @@
           <div class="pillrow">
             <span class="pill"><b>Main Line</b> Algorithm and Model Training</span>
             <span class="pill"><b>Secondary</b> Robotics and System Practice</span>
-            <span class="pill"><b>Browse</b> Featured Work + Full Library</span>
+            <span class="pill"><b>Format</b> Vertical Project Records + Detail Pages</span>
           </div>
         </div>
 
@@ -120,90 +120,203 @@
       </section>
 
       <section class="section-block fade-in d3">
-        <div class="section-title">Selected Projects</div>
-        <div class="selected-projects-grid">
-          <article class="project-spotlight-card project-spotlight-card-primary">
-            <div class="publication-meta">
-              <span class="tag level">Selected</span>
-              <span class="tag">algorithm</span>
-              <span class="tag">transformer</span>
-              <span class="tag">time-series</span>
-            </div>
-            <h3>Wind SHM Digital Twin with Transformer Encoder-Decoder</h3>
-            <p>
-              这是目前最能代表算法主线的项目之一，围绕结构健康监测、序列建模、数字孪生表达和研究输出展开，
-              也对应了你当前最值得持续放大的技术叙事。
-            </p>
-            <ul class="evidence-list">
-              <li>关注多变量时序建模、自注意力结构与实验结果分析</li>
-              <li>连接模型研发、实验验证与论文表达</li>
-              <li>对应 <em>Computers &amp; Structures</em> 稿件的持续推进</li>
-            </ul>
-            <div class="meta">
-              <a class="tag" href="ml/">Project Details</a>
-              <a class="tag" href="../research/">Related Research</a>
-            </div>
-          </article>
-
-          <article class="project-spotlight-card">
-            <div class="publication-meta">
-              <span class="tag level">Selected</span>
-              <span class="tag">training</span>
-              <span class="tag">ray</span>
-              <span class="tag">systems</span>
-            </div>
-            <h3>Training Workflow and Ray-Based Experiment Organization</h3>
-            <p>
-              这部分工作强调模型训练闭环，而不只是单次实验本身，重点包括训练脚本组织、配置管理、
-              并行试验、结果对比和可复现性整理。
-            </p>
-            <ul class="evidence-list">
-              <li>围绕 PyTorch 与 Ray 组织实验流程</li>
-              <li>更贴近算法工程和训练平台相关场景</li>
-              <li>服务于模型优化、参数搜索与实验编排</li>
-            </ul>
-            <div class="meta">
-              <a class="tag" href="ml/">Project Context</a>
-              <a class="tag" href="../about/">Capability Context</a>
-            </div>
-          </article>
+        <div class="section-title">Project Records</div>
+        <div class="intro-strip">
+          <p>
+            项目页现在按纵向记录方式组织。每个项目先给出一句摘要、方向标签、你负责的重点、当前可展示的证据，
+            再进入独立子页面查看更完整的技术思路、系统拆分、研究背景和后续可补充的照片与图示。
+          </p>
         </div>
+        <div class="project-list-vertical">
+          <article class="project-entry">
+            <div class="project-entry-head">
+              <div>
+                <div class="publication-meta">
+                  <span class="tag level">Selected</span>
+                  <span class="tag">algorithm</span>
+                  <span class="tag">transformer</span>
+                  <span class="tag">time-series</span>
+                </div>
+                <h3>Wind SHM Digital Twin with Transformer Encoder-Decoder</h3>
+              </div>
+              <a class="button ghost" href="wind-shm/">Open Detail Page</a>
+            </div>
+            <p class="project-entry-summary">
+              当前最核心的算法项目之一，围绕结构健康监测、多变量时序建模、自注意力结构和数字孪生表达展开，
+              也是你现在最值得持续放大的技术主线。
+            </p>
+            <div class="project-entry-grid">
+              <div>
+                <span>Project Focus</span>
+                <p>Transformer、时序建模、实验设计、结果分析、研究表达。</p>
+              </div>
+              <div>
+                <span>Your Role</span>
+                <p>负责模型研发、实验组织、结果整理与论文写作推进。</p>
+              </div>
+              <div>
+                <span>Current Evidence</span>
+                <p>已有研究稿件与完整的问题定义，后续可补实验图表、流程图和项目截图。</p>
+              </div>
+            </div>
+          </article>
 
-        <div class="project-grid project-grid-compact">
-          <article class="card project-card">
-            <h4>Concrete Chloride Diffusion Prediction</h4>
-            <p class="card-copy">第一作者发表工作，体现从数据处理、建模比较到结果表达的完整实验实现能力。</p>
-            <div class="meta">
-              <span class="tag">ml</span>
-              <span class="tag">research</span>
-              <a class="tag" href="../research/">Details</a>
+          <article class="project-entry">
+            <div class="project-entry-head">
+              <div>
+                <div class="publication-meta">
+                  <span class="tag level">Selected</span>
+                  <span class="tag">training</span>
+                  <span class="tag">ray</span>
+                  <span class="tag">systems</span>
+                </div>
+                <h3>Training Workflow and Ray-Based Experiment Organization</h3>
+              </div>
+              <a class="button ghost" href="training-workflows/">Open Detail Page</a>
+            </div>
+            <p class="project-entry-summary">
+              这部分工作强调模型训练闭环，而不是单次实验本身。重点在于训练脚本组织、实验配置、并行试验、
+              参数搜索和结果复盘，更贴近算法工程与训练平台相关场景。
+            </p>
+            <div class="project-entry-grid">
+              <div>
+                <span>Project Focus</span>
+                <p>PyTorch、Ray、实验编排、可复现性、参数搜索。</p>
+              </div>
+              <div>
+                <span>Your Role</span>
+                <p>负责训练流程组织、实验调度逻辑、结果对比与研发闭环整理。</p>
+              </div>
+              <div>
+                <span>Current Evidence</span>
+                <p>适合后续补训练流程图、配置组织方式、实验记录和结果对比图。</p>
+              </div>
             </div>
           </article>
-          <article class="card project-card">
-            <h4>Information-Theoretic Dynamic System Identification</h4>
-            <p class="card-copy">聚焦结构动力学、阻尼估计与算法分析，体现数学建模与工程问题之间的连接能力。</p>
-            <div class="meta">
-              <span class="tag">system-id</span>
-              <span class="tag">research</span>
-              <a class="tag" href="../research/">Details</a>
+
+          <article class="project-entry">
+            <div class="project-entry-head">
+              <div>
+                <div class="publication-meta">
+                  <span class="tag level">Published</span>
+                  <span class="tag">ml</span>
+                  <span class="tag">research</span>
+                </div>
+                <h3>Concrete Chloride Diffusion Prediction</h3>
+              </div>
+              <a class="button ghost" href="chloride-diffusion/">Open Detail Page</a>
+            </div>
+            <p class="project-entry-summary">
+              第一作者已发表工作，体现从数据构造、建模比较、结果评估到论文表达的完整研究实现过程。
+            </p>
+            <div class="project-entry-grid">
+              <div>
+                <span>Project Focus</span>
+                <p>机器学习预测建模、虚拟样本算法、模型比较、研究闭环。</p>
+              </div>
+              <div>
+                <span>Your Role</span>
+                <p>第一作者，负责建模、结果分析和论文产出。</p>
+              </div>
+              <div>
+                <span>Current Evidence</span>
+                <p>已发表论文、PDF 附件和研究页元数据可作为正式证据。</p>
+              </div>
             </div>
           </article>
-          <article class="card project-card">
-            <h4>Quadruped Robot Integration and Execution Loop</h4>
-            <p class="card-copy">围绕 ROS2、任务执行、日志回放和系统联调形成真实平台上的工程证据。</p>
-            <div class="meta">
-              <span class="tag">robotics</span>
-              <span class="tag">ros2</span>
-              <a class="tag" href="robotics/">Details</a>
+
+          <article class="project-entry">
+            <div class="project-entry-head">
+              <div>
+                <div class="publication-meta">
+                  <span class="tag level">Published</span>
+                  <span class="tag">system-id</span>
+                  <span class="tag">research</span>
+                </div>
+                <h3>Information-Theoretic Dynamic System Identification</h3>
+              </div>
+              <a class="button ghost" href="system-identification/">Open Detail Page</a>
+            </div>
+            <p class="project-entry-summary">
+              这项工作体现了结构动力学、阻尼估计与算法分析之间的连接能力，也补足了你在时序和动力系统方向的研究深度。
+            </p>
+            <div class="project-entry-grid">
+              <div>
+                <span>Project Focus</span>
+                <p>动态系统识别、输出仅观测条件下的阻尼估计、信息论方法。</p>
+              </div>
+              <div>
+                <span>Your Role</span>
+                <p>共同作者，参与方法研究与论文推进。</p>
+              </div>
+              <div>
+                <span>Current Evidence</span>
+                <p>已有正式发表论文和 PDF，可进一步补算法思路图和方法解释。</p>
+              </div>
             </div>
           </article>
-          <article class="card project-card">
-            <h4>SLAM Evaluation under Degraded Conditions</h4>
-            <p class="card-copy">关注统一实验口径、定位鲁棒性对比与真实系统中的工程代价评估。</p>
-            <div class="meta">
-              <span class="tag">slam</span>
-              <span class="tag">robotics</span>
-              <a class="tag" href="robotics/">Details</a>
+
+          <article class="project-entry">
+            <div class="project-entry-head">
+              <div>
+                <div class="publication-meta">
+                  <span class="tag level">Selected</span>
+                  <span class="tag">robotics</span>
+                  <span class="tag">ros2</span>
+                  <span class="tag">systems</span>
+                </div>
+                <h3>Quadruped Robot Integration and Execution Loop</h3>
+              </div>
+              <a class="button ghost" href="quadruped-integration/">Open Detail Page</a>
+            </div>
+            <p class="project-entry-summary">
+              这条主线主要用于体现真实系统中的接入、联调、验证与任务执行闭环，属于算法之外的重要工程证据。
+            </p>
+            <div class="project-entry-grid">
+              <div>
+                <span>Project Focus</span>
+                <p>ROS2、任务执行、日志回放、系统联调、工程闭环。</p>
+              </div>
+              <div>
+                <span>Your Role</span>
+                <p>重点在系统集成、模块边界梳理、实验流程组织与证据沉淀。</p>
+              </div>
+              <div>
+                <span>Current Evidence</span>
+                <p>适合补平台照片、系统架构图、运行视频和模块职责说明。</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-entry">
+            <div class="project-entry-head">
+              <div>
+                <div class="publication-meta">
+                  <span class="tag level">Selected</span>
+                  <span class="tag">slam</span>
+                  <span class="tag">robotics</span>
+                  <span class="tag">evaluation</span>
+                </div>
+                <h3>SLAM Evaluation under Degraded Conditions</h3>
+              </div>
+              <a class="button ghost" href="slam-evaluation/">Open Detail Page</a>
+            </div>
+            <p class="project-entry-summary">
+              这部分工作更强调统一实验口径、定位鲁棒性对比与工程代价评估，适合展示你对系统验证的理解。
+            </p>
+            <div class="project-entry-grid">
+              <div>
+                <span>Project Focus</span>
+                <p>退化工况、ATE/RPE、实时性、鲁棒性、系统资源消耗。</p>
+              </div>
+              <div>
+                <span>Your Role</span>
+                <p>围绕方案调研、实验比较框架和评估逻辑展开。</p>
+              </div>
+              <div>
+                <span>Current Evidence</span>
+                <p>适合补评估流程图、对比表和实验场景照片。</p>
+              </div>
             </div>
           </article>
         </div>

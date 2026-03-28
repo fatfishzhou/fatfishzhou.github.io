@@ -1005,6 +1005,92 @@ a:hover {
   margin-top: 14px;
 }
 
+.project-list-vertical {
+  display: grid;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.project-entry {
+  border: 1px solid rgba(22, 32, 43, 0.08);
+  border-radius: 24px;
+  padding: 20px;
+  background:
+    radial-gradient(240px 140px at 100% 0%, rgba(37, 99, 235, 0.05), transparent 70%),
+    linear-gradient(180deg, #ffffff, #f8fbfd);
+  box-shadow: var(--shadow);
+}
+
+.project-entry-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.project-entry-head h3 {
+  margin: 10px 0 0;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.project-entry-summary {
+  margin: 12px 0 0;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.project-entry-grid,
+.detail-fact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.project-entry-grid div,
+.detail-fact-card {
+  padding: 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(22, 32, 43, 0.08);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.project-entry-grid span,
+.detail-fact-card span {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted2);
+}
+
+.project-entry-grid p,
+.detail-fact-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.detail-section-card {
+  border: 1px solid rgba(22, 32, 43, 0.08);
+  border-radius: 24px;
+  padding: 20px;
+  background: linear-gradient(180deg, #ffffff, #f8fbfd);
+  box-shadow: var(--shadow);
+}
+
+.detail-section-card p {
+  margin: 0;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
 .highlight-grid,
 .about-layout,
 .contact-grid {
@@ -1243,6 +1329,8 @@ a:hover {
   .project-track-grid,
   .project-support-grid,
   .selected-projects-grid,
+  .project-entry-grid,
+  .detail-fact-grid,
   .highlight-grid,
   .category-grid,
   .about-layout,
@@ -1258,6 +1346,11 @@ a:hover {
 
   .contact-banner {
     grid-template-columns: 1fr;
+  }
+
+  .project-entry-head,
+  .project-overview-head {
+    display: grid;
   }
 
   .project-fact-grid {
