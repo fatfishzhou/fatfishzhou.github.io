@@ -168,6 +168,7 @@ a:hover {
 
 .hero p.hero-lead-strong {
   color: var(--text);
+  font-weight: 500;
 }
 
 .hero-actions {
