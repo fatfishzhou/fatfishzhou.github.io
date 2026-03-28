@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Feiyu Zhou | 具身智能 / 四足机器人 / RL / SLAM</title>
     <meta name="description" content="Feiyu Zhou：具身智能与机器人算法研究，聚焦四足机器人在复杂环境的 RL、SLAM 与 ROS2 工程落地。" />
+    <meta name="theme-color" content="#f6f8fb" />
     <link rel="icon" href="assets/favicon.svg" />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
@@ -23,87 +24,221 @@
         </nav>
       </header>
 
-      <section class="hero">
-        <div class="fade-in">
-          <h1>把算法变成能在真实地面上跑的机器人。</h1>
-          <p>
-            我希望在博士阶段聚焦四足机器人在复杂环境下的任务执行：强化学习（样本效率与鲁棒性）、
-            SLAM/状态估计（退化与动态环境）、以及 ROS2 工程化闭环（可复现、可调试、可部署）。
+      <section class="hero home-hero">
+        <div class="home-hero-main fade-in">
+          <div class="eyebrow">PhD Track · Embodied AI · Quadruped Robotics</div>
+          <h1>把机器人算法做成能在真实环境里稳定运行的系统。</h1>
+          <p class="hero-lead">
+            我目前聚焦四足机器人在复杂环境下的定位、决策与执行闭环，重点关注强化学习的鲁棒性、
+            SLAM/状态估计在退化与动态场景中的稳定性，以及 ROS2 工程化落地的可复现、可调试与可部署。
           </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="projects/">查看项目</a>
+            <a class="button" href="assets/FeiyuZhou_CV.pdf">下载 CV</a>
+            <a class="button ghost" href="en/">English</a>
+          </div>
+
           <div class="pillrow">
             <span class="pill"><b>Focus</b>: Quadruped</span>
-            <span class="pill"><b>Stack</b>: ROS2 / Linux</span>
             <span class="pill"><b>Algo</b>: RL / SLAM</span>
-            <span class="pill"><b>Style</b>: Reproducible</span>
+            <span class="pill"><b>System</b>: ROS2 / Linux</span>
+            <span class="pill"><b>Method</b>: Reproducible Engineering</span>
+          </div>
+
+          <div class="signal-grid">
+            <article class="signal-card">
+              <span class="signal-label">Current Goal</span>
+              <strong>面向复杂地形与动态环境的任务执行</strong>
+              <p>把定位、控制与策略学习放到同一个工程闭环里验证，而不是只停留在单模块实验。</p>
+            </article>
+            <article class="signal-card">
+              <span class="signal-label">Research Base</span>
+              <strong>时序建模、Transformer、自注意力、异常检测</strong>
+              <p>此前研究以结构响应预测与数字孪生为主，已有第一作者期刊论文和在审工作。</p>
+            </article>
+            <article class="signal-card">
+              <span class="signal-label">What Matters</span>
+              <strong>模块边界、指标定义、复现链路、部署证据</strong>
+              <p>我更关注系统是否可解释、可回放、可调试，而不只是单次 demo 是否“能跑起来”。</p>
+            </article>
           </div>
         </div>
 
-        <aside class="card fade-in d2">
-          <h3>联系方式</h3>
-          <div class="kv">
-            <div>Email</div>
-            <div><a href="mailto:Feiyu.2002@outlook.com">Feiyu.2002@outlook.com</a></div>
+        <aside class="profile-panel fade-in d2">
+          <div class="profile-card">
+            <div class="profile-header">
+              <div>
+                <div class="profile-kicker">Feiyu Zhou</div>
+                <h2>Embodied AI / Robotics Researcher</h2>
+              </div>
+              <span class="status-dot">Available for PhD and collaboration</span>
+            </div>
 
-            <div>GitHub</div>
-            <div><a href="https://github.com/fatfishzhou" target="_blank" rel="noreferrer">github.com/fatfishzhou</a></div>
+            <div class="profile-copy">
+              主页用于给潜在导师、合作方和同行一个尽可能低摩擦的入口：
+              先看方向是否匹配，再看项目证据是否扎实。
+            </div>
 
-            <div>Location</div>
-            <div>Hangzhou, China</div>
+            <div class="profile-list">
+              <div>
+                <span>Email</span>
+                <a href="mailto:Feiyu.2002@outlook.com">Feiyu.2002@outlook.com</a>
+              </div>
+              <div>
+                <span>GitHub</span>
+                <a href="https://github.com/fatfishzhou" target="_blank" rel="noreferrer">github.com/fatfishzhou</a>
+              </div>
+              <div>
+                <span>Location</span>
+                <strong>Hangzhou, China</strong>
+              </div>
+              <div>
+                <span>Documents</span>
+                <div class="doc-links">
+                  <a href="assets/FeiyuZhou_CV.pdf">CV</a>
+                  <a href="assets/FeiyuZhou_RS.pdf">Research Statement</a>
+                </div>
+              </div>
+            </div>
 
-            <div>CV</div>
-            <div><a href="assets/FeiyuZhou_CV.pdf">FeiyuZhou_CV.pdf</a> <span class="tag level">PDF</span></div>
-
-            <div>RS</div>
-            <div><a href="assets/FeiyuZhou_RS.pdf">FeiyuZhou_RS.pdf</a> <span class="tag level">PDF</span></div>
+            <div class="mini-metrics">
+              <div>
+                <strong>01</strong>
+                <span>机器人方向持续补齐可部署证据</span>
+              </div>
+              <div>
+                <strong>02</strong>
+                <span>研究兴趣收敛到 RL / SLAM / ROS2 闭环</span>
+              </div>
+              <div>
+                <strong>03</strong>
+                <span>过往 ML 研究为系统建模提供基础</span>
+              </div>
+            </div>
           </div>
         </aside>
       </section>
 
       <div class="grid">
-        <section class="col-7 fade-in d2">
-          <div class="section-title">Featured</div>
-          <div class="proj">
-            <h4>四足机器人：ROS2 + SLAM + 学习控制（进行中）</h4>
-            <p>
-              目标：在复杂环境中实现稳定定位与任务执行。这里放你最强的“模块边界 + 指标 + 证据（repo/视频）”。
-            </p>
-            <div class="meta">
-              <span class="tag level">Featured</span>
-              <span class="tag">ROS2</span>
-              <span class="tag">SLAM</span>
-              <span class="tag">RL</span>
-              <span class="tag bad">TODO: Replace with real metrics</span>
-              <a class="tag" href="projects/robotics/">Details</a>
-            </div>
+        <section class="col-12 fade-in d2">
+          <div class="section-title">Research Map</div>
+          <div class="map-grid">
+            <article class="map-card">
+              <span class="map-index">01</span>
+              <h3>Learning for Locomotion and Task Execution</h3>
+              <p>关注强化学习在样本效率、鲁棒性与 sim-to-real 路线上的可行性，目标是支撑真实机器人任务执行而非只做仿真结果。</p>
+            </article>
+            <article class="map-card">
+              <span class="map-index">02</span>
+              <h3>SLAM / State Estimation Under Degradation</h3>
+              <p>关注动态、遮挡、弱纹理、退化感知等工况下的定位稳定性，并用一致的评估指标比较不同方案的工程代价和收益。</p>
+            </article>
+            <article class="map-card">
+              <span class="map-index">03</span>
+              <h3>ROS2-Centered Engineering Loop</h3>
+              <p>把节点组织、参数管理、日志记录、回放评估和部署流程打通，让系统具备复现、调试和迭代能力。</p>
+            </article>
           </div>
         </section>
 
-        <section class="col-5 fade-in d3">
-          <div class="section-title">Now</div>
-          <div class="card">
-            <h3>我正在补齐的“证据包”</h3>
-            <div class="kv">
-              <div>Demo</div>
-              <div>1 个可运行任务 + 1-2 分钟视频</div>
-              <div>Code</div>
-              <div>可复现 ROS2 workspace + 脚本化评估</div>
-              <div>Metrics</div>
-              <div>SLAM ATE/RPE、RL 成功率/跌倒率/能耗</div>
-              <div>Docs</div>
-              <div>一页项目说明（问题/方法/结果/复现）</div>
+        <section class="col-7 fade-in d3">
+          <div class="section-title">Featured Work</div>
+          <div class="feature-stack">
+            <article class="proj proj-featured">
+              <div class="proj-head">
+                <div>
+                  <h4>四足机器人：ROS2 + SLAM + 学习控制闭环</h4>
+                  <p>当前主线项目，目标是在复杂环境中实现从感知到执行的稳定任务流程。</p>
+                </div>
+                <span class="tag level">Featured</span>
+              </div>
+              <ul class="evidence-list">
+                <li>正在收敛模块边界：传感器接入、状态估计、定位建图、任务执行与评估链路。</li>
+                <li>首页强调的不是单点成果，而是“系统闭环是否完整”和“证据是否可复核”。</li>
+                <li>后续会将 repo、短视频、指标与复现说明继续沉淀到 robotics 页面。</li>
+              </ul>
+              <div class="meta">
+                <span class="tag">ROS2</span>
+                <span class="tag">SLAM</span>
+                <span class="tag">RL</span>
+                <span class="tag">Deployment</span>
+                <a class="tag" href="projects/robotics/">查看细节</a>
+              </div>
+            </article>
+
+            <article class="proj">
+              <div class="proj-head">
+                <div>
+                  <h4>时序建模与数字孪生研究基础</h4>
+                  <p>过往研究覆盖风工程结构响应预测、Transformer 编解码、自注意力建模与异常检测。</p>
+                </div>
+                <span class="tag">Research Base</span>
+              </div>
+              <ul class="evidence-list">
+                <li>已有第一作者期刊论文发表，另有第一作者工作在审。</li>
+                <li>这部分经历为后续机器人中的状态建模、时序预测与实验设计提供了方法基础。</li>
+                <li>相关项目已整理到项目页，适合作为机器人研究之前的能力背景阅读。</li>
+              </ul>
+              <div class="meta">
+                <span class="tag">Transformer</span>
+                <span class="tag">Time-series</span>
+                <span class="tag">Digital Twin</span>
+                <a class="tag" href="projects/ml/">查看项目</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="col-5 fade-in d4">
+          <div class="section-title">Now Building</div>
+          <div class="card progress-card">
+            <h3>当前在补齐的证据包</h3>
+            <div class="progress-list">
+              <div>
+                <span>Demo &amp; Video</span>
+                <p>至少 1 个可重复执行的任务流程，配 60-120 秒视频，覆盖环境、输入、结果与失败模式。</p>
+              </div>
+              <div>
+                <span>Repo &amp; Repro</span>
+                <p>可运行 ROS2 workspace、清晰的依赖说明、启动脚本和最小化复现实验命令。</p>
+              </div>
+              <div>
+                <span>Metrics</span>
+                <p>SLAM 的 ATE/RPE，任务成功率，跌倒率，能耗与实时性等指标统一到同一评估口径。</p>
+              </div>
+              <div>
+                <span>One-page Docs</span>
+                <p>每个重点项目都要能用一页说明问题、方法、结果、模块归属与复现方式。</p>
+              </div>
             </div>
           </div>
         </section>
 
         <section class="col-12 fade-in d4">
-          <div class="section-title">About</div>
-          <div class="card">
-            <h3>我能提供什么</h3>
-            <p style="margin:0;color:rgba(255,255,255,0.78);font-size:14px;">
-              我过往科研覆盖时序建模、Transformer 自注意力、异常检测与数字孪生，已有第一作者期刊发表与在审论文。
-              当前重心转向机器人与具身智能，希望将算法研究与实体系统落地结合，形成可验证与可复现的成果。
-              如果你是潜在导师或合作者，建议从 <a href="projects/">Projects</a> 先看“精选项目”，再按标签筛选全量清单。
-            </p>
+          <div class="section-title">About This Site</div>
+          <div class="about-grid">
+            <article class="card about-card">
+              <h3>适合怎样的合作</h3>
+              <p>
+                如果你关心的是具身智能、移动机器人、四足平台上的感知与控制闭环，这里会优先展示与方向匹配的项目页面、
+                文档和代码入口，而不是堆砌分散的经历列表。
+              </p>
+            </article>
+            <article class="card about-card">
+              <h3>我希望传达的工作方式</h3>
+              <p>
+                我倾向于用明确的模块责任、统一的评价指标和可回放的实验流程来组织研究工作。
+                对我来说，可复现和可调试不是附加项，而是研究可信度的一部分。
+              </p>
+            </article>
+            <article class="card about-card">
+              <h3>建议的阅读路径</h3>
+              <p>
+                如果你是潜在导师或合作者，建议先看 <a href="projects/robotics/">Robotics</a> 页面确认当前主线，
+                再看 <a href="projects/">Projects</a> 页面浏览完整项目清单；需要正式材料可直接下载 CV 与 Research Statement。
+              </p>
+            </article>
           </div>
         </section>
       </div>
@@ -120,4 +255,3 @@
     </script>
   </body>
 </html>
-
