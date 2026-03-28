@@ -357,52 +357,109 @@ a:hover {
   box-shadow: var(--shadow);
 }
 
-.positioning-wide-head {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px;
+.positioning-wide-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: 22px;
+  align-items: start;
 }
 
-.positioning-wide-head h2 {
+.positioning-main h2 {
   margin: 6px 0 0;
   font-size: 30px;
   line-height: 1.08;
   letter-spacing: -0.5px;
 }
 
-.positioning-wide-body {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
-  gap: 24px;
-  margin-top: 18px;
-}
-
 .positioning-wide-copy {
+  margin: 14px 0 0;
   color: var(--muted);
   font-size: 16px;
   line-height: 1.7;
   max-width: 62ch;
 }
 
-.positioning-wide-side {
+.positioning-chiprow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.positioning-facts {
   display: grid;
-  gap: 18px;
+  gap: 12px;
 }
 
-.mini-metrics-inline {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.mini-metrics-inline div {
-  grid-template-columns: 1fr;
-  gap: 8px;
-  align-items: start;
-  padding: 14px;
+.positioning-fact {
+  padding: 16px;
   border-radius: 18px;
   border: 1px solid rgba(22, 32, 43, 0.08);
   background: rgba(255, 255, 255, 0.74);
+  min-height: 98px;
+}
+
+.positioning-fact span {
+  display: block;
+  margin-bottom: 8px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted2);
+}
+
+.positioning-fact strong {
+  display: block;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.positioning-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.positioning-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  border: 1px solid rgba(22, 32, 43, 0.08);
+  background: rgba(255, 255, 255, 0.94);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.positioning-points {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.position-point {
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(22, 32, 43, 0.08);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.position-point strong {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: var(--accent2);
+}
+
+.position-point p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
 }
 
 .profile-header {
@@ -982,14 +1039,13 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
-  .positioning-wide-head,
-  .positioning-wide-body,
-  .mini-metrics-inline {
+  .positioning-wide-grid,
+  .positioning-points {
     grid-template-columns: 1fr;
   }
 
-  .positioning-wide-head {
-    display: grid;
+  .positioning-facts {
+    gap: 10px;
   }
 }
 
